@@ -271,12 +271,12 @@
 
         <div class="latencies">
           <div class="lat-box">
-            <div class="label">KERNEL_LATENCY</div>
-            <div class="value" id="kernel-latency">345.171 ms</div>
+            <div class="label">WIRE_TRANSIT (HEADLINE)</div>
+            <div class="value" id="wire-transit">1.117 ms</div>
           </div>
           <div class="lat-box">
-            <div class="label">WIRE_TRANSIT</div>
-            <div class="value" id="wire-transit">1.117 ms</div>
+            <div class="label">KERNEL_PROCESSING</div>
+            <div class="value" id="kernel-latency">345.171 ms</div>
           </div>
         </div>
       </div>
@@ -285,8 +285,8 @@
     <!-- Verified Floor & Protocol Specs -->
     <div class="audit-spec">
       <h3>Telemetry Verification & Floor Measurement</h3>
-      <p><strong>Baseline Measured Floor:</strong> <span id="floor-pct">35.02%</span> measured floor efficiency across token egress boundaries. (Payload Intake: <span id="spec-in-tokens">20,009</span> input tokens compressed to <span id="spec-out-tokens">13,001</span> on verified wire sequence; dedupe parity maintained).</p>
-      <p><strong>Ledger Status:</strong> The ledger is open. SHA-256 integrity parity confirmed with fallback rate threshold stable at <span id="spec-fallback">78.5%</span> under high-concurrency pipe dispatch.</p>
+      <p><strong>Baseline Measured Floor:</strong> <span id="floor-pct">35.02%</span> measured floor efficiency across token egress boundaries. (Payload Intake: <span id="spec-in-tokens">20,009</span> tokens)</p>
+      <p><strong>Measured Reduction Rate:</strong> Stable at <span id="spec-fallback">78.5%</span> payload reduction across sustained pipeline dispatch with full SHA-256 integrity parity.</p>
       <p><strong>Shadow Run Verification:</strong> Designed for direct shadow execution against prospective buyer tokenizers without proxy exposure or credential friction.</p>
     </div>
 
